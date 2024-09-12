@@ -129,6 +129,11 @@ padding: 3.3vw;
     .principal {
         height: auto;
     }
+    .imagemgrupo {
+
+        width: 60vw;
+        height: 30vh;
+    }
 
     .footer {
         flex-direction: column;
@@ -136,7 +141,7 @@ padding: 3.3vw;
     }
 
     .footer img {
-        width: 80vw;
-        height: 90vh;
+        width: 35vw;
+        height: 30vh;
     }
 }

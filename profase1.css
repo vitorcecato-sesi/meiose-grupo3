@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    
+    body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    }
+    
+   
+   
+    
+ 
+    a {
+    text-decoration: none;
+    color: inherit;
+    }
+    
+    
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    
+    input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    }
+    
+  
+    h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    }
+    /* Esse flex é oque estou utilizando para deixar o meuio em coluna para facar os blocos um em baixo do outro  */
+    .flex{ 
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        padding-bottom: -2%;
+        align-items: center;
+    }
+    /* Para dar um espaço entre os blocos verdes  */
+    .flex h2 {
+        padding-top: 2em;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        background-color: #CEE741;
+        height: 12vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #8FD14F;
+        height: 4vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* Esse é o flex box que estou utilizando para os blocos verdes */
+    .box1{
+        display: flex;
+        flex-direction: row;
+        background-color: greenyellow;
+        width: 50vw;
+        text-align: justify; 
+        justify-content: space-between;
+        border-radius: 2%;
+        font-size: 0.8em;
+
+    }
+    
+
+    .img{
+        box-shadow: 0.5vw 0.5vw 0.5vw black;
+    }
+    p,ul{
+        padding: 3%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #8FD14F;
+        padding: 2em;
+        justify-content: space-around;
+    }
+    
+    .footer img {
+        width: 12vw;
+        height: 25vh;
+    }
+    
+    .footer h3 {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    
+    .footer p {
+        font-size: 1em;
+    }
+    .nav a:hover {
+        opacity: 1;
+        transition: 5ms;
+        box-shadow: 0px 0px 15px white; /* Alterar a cor*/
+    }
+    @media screen and (max-width: 768px) {
+        .box1{
+            display: flex;
+            flex-direction: column;
+            background-color: greenyellow;
+            width: 50vw;
+            text-align: justify; 
+            justify-content: space-between;
+            border-radius: 2%;
+            font-size: 0.8em;
+    
+        }
+        .img{
+            box-shadow: 0vw 0vw 0vw black;
+        }
+    
+        p,ul{
+            padding: 5%;
+            list-style: none;
+        }
+
+    }
+    @media screen and (max-width: 1045px){
+        .img{
+            box-shadow: 0vw 0vw 0vw black;
+        }
+    }
+    @media screen and (max-width: 912px){
+        
+        .box1{
+            display: flex;
+            flex-direction: column;
+            background-color: greenyellow;
+            width: 60vw;
+            text-align: justify; 
+            justify-content: space-between;
+            border-radius: 2%;
+            font-size: 0.8em;
+    }
+}

@@ -129,6 +129,12 @@
             font-size: 0.8em;
     
         }
+        .footer img {
+            width: 25vw;
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
+        }
         .img{
             box-shadow: 0vw 0vw 0vw black;
         }

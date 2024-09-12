@@ -141,7 +141,7 @@
             box-shadow: 0vw 0vw 0vw black;
         }
         .footer img {
-            width: 25vw;
+           width: 40vw;
             height: 25vh;
             display: flex;
             flex-direction: column;

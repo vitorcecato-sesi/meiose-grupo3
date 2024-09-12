@@ -278,7 +278,7 @@ li {
      max-width: 50vw;   
     }
 
-    .picture-intro {
+    .box-celulas {
         flex-direction: column;
         align-items: center;
         width: auto;

@@ -1,0 +1,195 @@
+/* Formatar do Site */
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans';
+}
+
+/* Definir o H1 e H2 para todo o Site */
+h1, h2{
+    font-size: 2em;
+}
+
+/* Definir o P para todo o Site */
+p {
+    font-size: 1.2em;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* FlexBox do Site inteiro */
+.flexbox-site {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* FlexBox do Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #CEE741;
+    height: 12vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* FlexBox do Nav */
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #8FD14F;
+    height: 4vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Definição para os Botões da Navegação */
+.nav a {
+    text-decoration: none;
+    color: black;
+    height: 2vh;
+    width: 25vw;
+    text-align: center;
+    padding: 5px;
+    background-color: #8FD14F;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;  
+}
+
+/* Colocar uma "sombra" ao clicar nos Botões */
+.nav a:hover {
+    opacity: 1;
+    transition: 5ms;
+    box-shadow: 0px 0px 15px white; /* Alterar a cor*/
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* FlexBox de todo o Article */
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FlexBox que junta o Texto 1 e Texto 2 */
+.article-bloco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 3%;
+}
+
+/* Definir o H2 apenas do Article */
+.article-bloco h2 {
+    font-size: 1.3em;
+}
+
+/* FlexBox do Texto 1 */
+.article-texto1 {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: 2px solid #CEE741;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 12px gray);
+}
+
+/* FlexBox do Texto 2 */
+.article-texto2 {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    border: 2px solid #8FD14F;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 12px gray);
+}
+
+/* FlexBox / Definição da Imagem */
+.article img {
+    display: flex;
+    width: 50vw;
+    padding: 3%;
+    filter: drop-shadow(0px 0px 12px gray);
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* FlexBox do Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #8FD14F;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+/* Definição da Imagem */
+.footer img {
+    width: 12vw;
+    height: 25vh;
+}
+
+/* Definição da Lista LI */
+.footer li {
+    font-size: 1.2em;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Resolução até 768px */
+@media screen and (max-width: 768px) {
+
+    .nav {
+        height: 10vh;
+    }
+
+    .nav a {
+        width: 40vw;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer img {
+        width: 25vw;
+        height: 29vh;
+    }
+
+    .article img {
+        width: 70vw;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Resolução até 480px */
+@media screen and (max-width: 480px) {
+
+    .nav {
+        height: 10vh;
+    }
+
+    .nav a {
+        width: 36vw;
+    }
+
+    .footer img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .article img {
+        width: 80vw;
+    }
+
+}
+
+/* --------------------------------------------------------------------------- */
